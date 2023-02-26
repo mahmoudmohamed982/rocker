@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rocker</title>
+</head>
+<body>
+    <!-- setting box section -->
+    <div class="setting">
+        <div class="spin_icon">
+            <i class="fas fa-cog"> </i>
+        </div>
+        
+        <p class="setting-options">
+            Setting Options
+        </p>
+        <div class="color-options">
+            <div class="color-div">
+            
+             <h4>Colors</h4> 
+            <ul class="color-list ">
+                <li  class="active" data-color="#7b5244"></li>
+                <li data-color="#ffb700"></li>
+                <li data-color="#81c6db"></li>
+                <li data-color="#61185b"></li>
+            </ul>
+        </div>
+        <div class="mode-div">
+           
+            <h4>Mode</h4> 
+            <ul class=" mode">
+                <li><i class="fas fa-adjust"  data-bgcolor="#222"></i></li>
+                <li ><i class="fas fa-sun" data-bgcolor="#fff"></i></li>
+                
+            </ul>
+        </div>
+        <div class="background-div">
+             <h4>Moving Slider</h4> 
+             <div class="Random-Background">
+             <span class=" yes active" data-bgimage="yes">Yes</span>
+            <span class="no" data-bgimage="no">No</span>
+        </div>
+        
+        </div>
+        </div>
+        <button class="reset-options">Reset Options</button>
+
+    </div>
+     
+   <!-- End setting box section -->
+
+   <!-- Navigation bullets -->
+   <div class="Navigation-bullets">
+       <div class="Navigation-bullet" data-section=".category-1">
+        <div class="tooltip">Category</div>
+       </div>
+       <div class="Navigation-bullet" data-section=".featured">
+        <div class="tooltip" >Featured</div>
+    </div>
+    <div class="Navigation-bullet" data-section=".discount"> 
+        <div class="tooltip" >Discount</div>
+    </div>
+
+
+   </div>
+    <!-- End Navigation bullets -->
+    <!-- header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-container">
+               
+            <div class="logo">
+               <a href="index.html"> <img src="images/logo.png" alt="logo"></a>
+            </div> <!-- ../logo-->
+            <nav>
+                <!-- navbar -->
+                <input type="checkbox" id="menu">
+                <label for="menu" id="menu-button"></label>
+                    
+                <ul class="nave-list">
+                    <!-- dropdown -->
+                    <li class="dropdawon">
+                        <a href="#"  data-section=".featured" >furniture</a>
+                        <div class="dropdawon-menu">
+
+                        <ul class="item-menu">
+                            <li><a href="#"> tables</a></li>
+                            <li><a href="#">study table</a> </li>
+                            <li><a href="#">coffe table</a> </li>
+                            <li><a href="#">stools</a> </li>
+                            <li><a href="#">writting desk</a> </li>
+                        </ul>
+                        <ul class="item-menu">
+                            <li><a href="#">dining</a></li>
+                            <li><a href="#">dining chairs</a></li>
+                            <li><a href="#">bar stools</a></li>
+                            <li><a href="#">benches</a></li>
+                            <li><a href="#">dining table</a></li>
+                        </ul>
+                        <ul class="item-menu">
+                            <li><a href="#">sofas</a> </li>
+                            <li><a href="#">arm chairs</a> </li>
+                            <li><a href="#">day beds</a> </li>
+                            <li><a href="#">poefs</a> </li>
+                            <li><a href="#">long charset</a> </li>
+                        </ul>
+                       
+                    </div>
+                    </li>
+                    <li><a href="#">armories</a></li>
+                    <li><a href="#">study table</a></li>
+                    <li class="dropdawon plastic-dropdawon">
+                        <a href="#">plastic chair</a>
+                            <div class="dropdawon-menu plastic-dropdawon-menu">
+
+                                <ul>
+                                    <li><a href="#">book shelves</a> </li>
+                                    <li><a href="#">cop boards</a> </li>
+                                    <li><a href="#">shoe rocks</a> </li>
+                                </ul>
+                            </div>
+                        </li>
+                    <li><a href="#">ward robes</a></li>
+                    <li class="more-dropdawon dropdawon plastic-dropdawon ">
+                        <a href="#">more</a>
+                            <div class="more-dropdawon-menu dropdawon-menu plastic-dropdawon-menu">
+
+                                <ul>
+                                    <li><a href="#">office chairs</a> </li>
+                                    <li><a href="#">wooden chairs</a> </li>
+                                    <li><a href="#">blogs</a> </li>
+                                </ul>
+                            </div>
+                        </li>
+                </ul> 
+                <!-- ../dropdown -->
+            </nav> 
+            <!-- ../navbar -->
+            <!-- header icons -->
+
+            <div class="header-icons">
+                <ul class="signList">  
+                    <li><a href="login.html">Sign in</a></li>
+                    <li><a href="register.html">Sign Up</a></li>
+
+                </ul>
+                <ul class="header-icons-list" id="user_info ">
+                    <li><i class="fas fa-search fa-lg"></i></li>
+                    <li><i class="fas fa-user-circle fa-lg"></i></li>
+                    <li class="cart-counter">
+                        <i class="fas fa-cart-plus fa-lg"> <span class="cart-span">your bag</span></i>
+                    </li>
+                    <li ><a href="profile.html" id=user></a></li>
+                    <li><a href="register.html" id="logout">Log out</a></li>
+                </ul>
+            </div>
+            <!-- ../header icons -->
+        </div> 
+        <!-- ../header container -->
+      
+        
+    </div>
+   <!-- ../header container -->
+    </header> 
+    <!-- ../header -->
+      <!-- slider -->
+      <section class="slider-section">
+          <div class="container">
+       
+    <div class="slider" >
+        <img  name="slideshow" src="images/slider_img/slider01.jpg">
+        <ul class="bolits">
+            <li class="active"></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+    </section>
+            <!-- ../slider -->
+
+    <!-- category section 1 -->
+    <section class="category-1">
+        <div class="container">
+            <div class="category-header padding-y">
+                <h2>special category</h2>
+                <span class="line"></span>
+            </div>
+            <!-- ../heder title -->
+            <div class="category-items">
+
+            <div class="category-1_item">
+                <img src="images/category-banner1.jpg" alt="chair">
+                    <span class="desc">most popular</span>
+                    <h4 class="item-title">classic chair collection</h4>
+                    <i class="fas fa-angle-double-right"></i>
+            </div>
+            <div class="category-1_item">
+                <img src="images/category-banner2.jpg" alt="chair">
+                    <span class="desc">most popular</span>
+                    <h4 class="item-title">wooden chair collection</h4>
+                    <i class="fas fa-angle-double-right"></i>
+            </div>
+            <div class="category-1_item">
+                <img src="images/category-banner3.jpg" alt="chair">
+                    <span class="desc">most popular</span>
+                    <h4 class="item-title">study chair collection</h4>
+                    <i class="fas fa-angle-double-right"></i>
+            </div>
+            <div class="category-1_item">
+                <img src="images/category-banner4.jpg" alt="chair">
+                    <span class="desc">most popular</span>
+                    <h4 class="item-title">tool chair collection</h4>
+                    <i class="fas fa-angle-double-right"></i>
+            </div>
+
+        </div>
+        </div>
+        <ul class="bolits">
+            <li class="active"></li>
+            <li></li>
+        </ul>
+    </section>
+    <!-- ../category-1 section -->
+    <section class="discount">
+        <div class="container">
+        <div class="discount-items">
+            <div class="team">
+                <div class="team-title">
+                    <h4>luies charles</h4>
+                    <span class="field">(marketing)</span>
+                </div>
+                
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reiciendis a corrupti sequi porro quaerat, perspiciatis rem. 
+                    Reiciendis a corrupti sequi porro quaerat, perspiciatis rem. 
+                    Quam dignissimos eum at? Numquam, soluta perferendis
+                    Iste maxime dolore exercitationem eveniet!</p>
+                    <div class="bottom-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                    <i class="fas fa-quote-left comma"></i>
+            </div>
+            <div class="discount-item item1">
+                <img src="images/cms-banner-1.jpg" alt="">
+                <div class="discount-content">
+                <span>30% discount</span>
+                <h4>designing interior</h4>
+            </div>
+            </div>
+            <div class="discount-item item2">
+                <img src="images/cms-banner-2.jpg" alt="">
+                <div class="discount-content">
+                <span>20% discount</span>
+                <h4>wooden study table</h4>
+            </div>
+
+            </div>
+        </div>
+        <div class="services padding-y">
+            <div class="service-item">
+                <div class="icon-item icon-item-1"></div>
+                <div class="icon-desc">
+                   <h4>free delivery</h4>
+                <span>Free Shipping On All Order</span>
+            </div> 
+            </div>
+            <div class="service-item">
+                <div class="icon-item icon-item-2"></div>
+                <div class="icon-desc">
+                    <h4>money return</h4>
+                    <span>Free Shipping On All Order</span>
+                </div> 
+                </div>
+                
+           
+            <div class="service-item">
+                 <div class="icon-item icon-item-3"></div>
+                <div class="icon-desc">
+                    <h4>member discount</h4>
+                    <span>Free Shipping On All Order</span>
+                </div> 
+             
+            </div>
+            <div class="service-item">
+                 <div class="icon-item icon-item-4"></div>
+                <div class="icon-desc">
+                    <h4>online support</h4>
+                    <span>Free Shipping On All Order</span>
+                </div> 
+             
+            </div>
+            <div class="service-item">
+                 <div class="icon-item icon-item-5"></div>
+                <div class="icon-desc">
+                    <h4>return policy</h4>
+                <span>Free Shipping On All Order</span>
+                </div> 
+               
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- ../discount section -->
+
+    <!-- Featured Products section -->
+    <section class="featured">
+        <div class="container">
+            <div class="featured-header category-header ">
+                <h2>featured products </h2>
+                <span class="line"></span>
+            </div>
+            <div class="featured-nav">
+                <ul>
+                <li><a href="#">wooden chair</a></li>
+                <li><a href="#">plastic chair</a></li>
+                <li><a href="#">study table</a></li>
+                <li><a href="#">armories</a></li>
+                </ul>
+            </div>
+            <div class="featured-items">
+                <div class="featured-item">
+                    <div class="img-container">
+                    <img src="images/chair1.jpg" alt="chair">
+                    <div class="featured-overlay">
+                        <img src="images/chair6.jpg" alt="">
+                        <div class="featured-icons">
+                            <ul>
+                                <li><i class="far fa-heart fa-lg"></i></li>
+                                <li><i class="fas fa-eye fa-lg"></i></li>
+                                <li><i class="fas fa-cart-plus fa-lg"></i></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                    <div class="item-desc not-rated">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <p>aliquam quaerat</p>
+                    <span>&dollar;260 <s>&dollar;300</s></span>
+                </div>
+                </div>
+                <div class="featured-item">
+                    <div class="img-container">
+                    <img src="images/chair2.jpg" alt="chair">
+                    <div class="sale">
+                        <p>8% off</p>
+                    </div>
+                    <div class="featured-overlay">
+                        <img src="images/chair5.jpg" alt="">
+                        <div class="featured-icons">
+                            <ul>
+                                <li><i class="far fa-heart fa-lg"></i></li>
+                                <li><i class="fas fa-eye fa-lg"></i></li>
+                                <li><i class="fas fa-cart-plus fa-lg"></i></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                    <div class="item-desc rated">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <p>aliquam quaerat</p>
+                    <span>&dollar;110 <s>&dollar;150</s></span>
+                </div>
+                </div>
+                <div class="featured-item">
+                    <div class="img-container">
+                    <img src="images/chair3.jpg" alt="chair">
+                    <div class="featured-overlay">
+                        <img src="images/chair4.jpg" alt="">
+                        <div class="featured-icons">
+                            <ul>
+                                <li><i class="far fa-heart fa-lg"></i></li>
+                                <li><i class="fas fa-eye fa-lg"></i></li>
+                                <li><i class="fas fa-cart-plus fa-lg"></i></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                    <div class="item-desc rated">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fas fa-star"></i>
+                    <p>aliquam quaerat</p>
+                    <span>&dollar;160 <s>&dollar;200</s></span>
+                </div>
+                </div>
+                <div class="featured-item">
+                    <div class="img-container">
+                    <img src="images/chair4.jpg" alt="chair">
+                    <div class="sale">
+                        <p>12% off</p>
+                    </div>
+                    <div class="featured-overlay">
+                        <img src="images/chair3.jpg" alt="">
+                        <div class="featured-icons">
+                            <ul>
+                                <li><i class="far fa-heart fa-lg"></i></li>
+                                <li><i class="fas fa-eye fa-lg"></i></li>
+                                <li><i class="fas fa-cart-plus fa-lg"></i></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                    <div class="item-desc not-rated">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <p>aliquam quaerat</p>
+                    <span>&dollar;400 <s>&dollar;450</s></span>
+                </div>
+                </div>
+                <div class="featured-item">
+                    <div class="img-container">
+                    <img src="images/chair5.jpg" alt="chair">
+                    <div class="sale">
+                        <p>5% off</p>
+                    </div>
+                    <div class="featured-overlay">
+                        <img src="images/chair2.jpg" alt="">
+                        <div class="featured-icons">
+                            <ul>
+                                <li><i class="far fa-heart fa-lg"></i></li>
+                                <li><i class="fas fa-eye fa-lg"></i></li>
+                                <li><i class="fas fa-cart-plus fa-lg"></i></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                    <div class="item-desc not-rated">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <p>aliquam quaerat</p>
+                    <span>&dollar;108.80 <s>&dollar;150.70</s></span> 
+                </div>
+                </div>
+                <div class="featured-item">
+                    <div class="img-container">
+                    <img src="images/chair6.jpg" alt="chair">
+                    <div class="featured-overlay">
+                        <img src="images/chair1.jpg" alt="">
+                        <div class="featured-icons">
+                            <ul>
+                                <li><i class="far fa-heart fa-lg"></i></li>
+                                <li><i class="fas fa-eye fa-lg"></i></li>
+                                <li><i class="fas fa-cart-plus fa-lg"></i></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                    <div class="item-desc rated">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <p>aliquam quaerat</p>
+                    <span>&dollar;205 <s>&dollar;270</s></span>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- ../featured section -->
+
+    <section class="about">
+        <div class="container">
+            <div class="about-flex padding-y">
+            <div class="about-left">
+                <img src="images/banner.PNG" alt="">
+                <div class="play">
+                    <img src="images/play.png" alt="">
+                </div>
+            </div>
+            <div class="team about-right">
+                <div class="team-title">
+                    <h4>luies charles</h4>
+                    <span class="field">(marketing)</span>
+                </div>
+                
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reiciendis a corrupti sequi porro quaerat, perspiciatis rem. 
+                    Reiciendis a corrupti sequi porro quaerat, perspiciatis rem. 
+                    Quam dignissimos eum at? Numquam, soluta perferendis
+                    Iste maxime dolore exercitationem eveniet!</p>
+                    <div class="bottom-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                    <i class="fas fa-quote-left comma"></i>
+            </div>
+        </div>
+    </div>
+        </div>
+    </section>
+    <!-- ../about our products -->
+
+    <section>
+        <div class="container">
+            <div class="our-clients">
+            <div class="client"><img src="images/client1.png" alt="our client"></div>
+            <div class="client"><img src="images/client2.png" alt="our client"></div>
+            <div class="client"><img src="images/client3.png" alt="our client"></div>
+            <div class="client"><img src="images/client4.png" alt="our client"></div>
+            <div class="client"><img src="images/client5.png" alt="our client"></div>
+            <div class="client"><img src="images/client6.png" alt="our client"></div>
+            <div class="left-arrow">
+                <i class="fas fa-chevron-left"></i>
+                        </div>
+            <div class="right-arrow">
+                <i class="fas fa-chevron-right"></i>    
+            </div>
+        </div>
+        
+        </div>
+    </section>
+    <!-- ../our-clients -->
+    <footer>
+        <div class="container">
+            <div class="grid-display padding-y">
+            <div class="footer-logo">
+                <div class="logo-img">
+                    <img src="images/footer-logo.png" alt="logo">
+
+                </div>
+                <div class="logo-desc">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        LoremIpsum has been the industry's standard dummy text ever since the 1500s, 
+                        Lorem Ipsum is simply dumm
+                    </p>
+                </div>
+               
+                <div class="download">
+                    <img src="images/cms-footer-1.png" alt="apple-store">
+                    <img src="images/cms-footer-2.png" alt="google-play">
+                </div>
+            </div>
+            <div class="info">
+                <a href="#" class="list-header">information</a>
+                <input type="checkbox" id="menu">
+                <label for="menu"><i class="fas fa-chevron-down"></i></label>
+                <ul class="info-list">
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">delivery information</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">terms & conditions</a></li>
+                    <li><a href="#">site map</a></li>
+                </ul>
+
+            </div>
+            <div class="my-account">
+                <a href="#" class="list-header">my account</a>
+                <input type="checkbox" id="menu">
+                    <label for="menu"><i class="fas fa-chevron-down"></i></label>
+                    
+                <ul class="account-list">
+                    <li><a href="#">my account</a></li>
+                    <li><a href="#">order history</a></li>
+                    <li><a href="#">wish list</a></li>
+                    <li><a href="#">news letter</a></li>
+                    <li><a href="#">returns</a></li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <a href="#">subscribe now</a>
+                <div class="email-input">
+                    <input  type="search" placeholder="Enter your email adress">
+                    <div class="send-icon">
+                        <i class="far fa-paper-plane send"></i>
+                    </div>
+                </div>
+                    
+                <div class="socail-media">
+
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+        <div class="copy-right">
+            <span>all &copy; copy-right reserved to Mahmoud muhammed </span>
+        </div>
+    </div>
+    </footer>
+    s
+    <!-- ../footer -->
+    
+    <script src="js/slider.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/c36afd10a7.js" crossorigin="anonymous"></script>
+</body>
+</html>

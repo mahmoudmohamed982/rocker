@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sign In Page</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+      <!-- header -->
+      <header class="main-header">
+        <div class="container">
+            <div class="header-container">
+               
+            <div class="logo">
+               <a href="index.html"> <img src="images/logo.png" alt="logo"></a>
+            </div> <!-- ../logo-->
+          
+            <!-- ../navbar -->
+            <!-- header icons -->
+
+            <div class="header-icons">
+                <ul class="signList" >  
+                    <li><a href="login.html">Sign in</a></li>
+                    <li><a href="register.html">Sign Up</a></li>
+                </ul>
+                <ul class="header-icons-list" id="user_info " style="display: none;">
+                    <li><i class="fas fa-search fa-lg"></i></li>
+                    <li><i class="fas fa-user-circle fa-lg"></i></li>
+                    <li class="cart-counter">
+                    <i class="fas fa-cart-plus fa-lg"> <span class="cart-span">your bag</span></i>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- ../header icons -->
+        </div> 
+        <!-- ../header container -->
+      
+        
+    </div>
+   <!-- ../header container -->
+    </header> 
+    <!-- ../header -->
+
+
+    
+      <div class="login-box">
+        <h2>Login</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="" id="username">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="" id="password">
+            <label>Password</label>
+          </div>
+          <a href="#register.html" id="sign_in" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+        </form>
+      </div>
+   
+
+<script src="js/login.js"></script>
+
+  </body>
+</html>
